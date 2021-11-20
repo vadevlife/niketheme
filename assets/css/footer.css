@@ -1,0 +1,92 @@
+footer {
+    background-color: black !important;
+}
+#footer-img {
+    background-image: url("../img/footer-img.png"); 
+  min-height: 400px;  
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+button.w-25.btn.m-auto.d-inline-flex.text-white.rounded-pill.text-uppercase.text-center.mt-3.mb-4.m-auto {
+    border-color: white;
+}
+ 
+.btn {
+    border-radius: 50rem!important;
+    border-color: white !important;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #D50F36; 
+    border-color: #D50F36; 
+    font-weight: 500;
+    height: 45px; 
+    max-width: 180px;
+}
+
+.d-flex {
+    display: flex!important;
+    justify-content: space-around;
+}
+h5#redes-sociais {
+    padding-top: 52px;
+}
+h5.redes-sociais {
+    font-size: 16px;
+}
+
+.icons {
+    width: 20px;
+    height: 20px;
+}
+p.text-center.text-muted.pt-2 {
+    font-size: 12px;
+}
+
+a.text-white.text-decoration-none {
+    font-size: 14px;
+}
+
+/* Media query - mobil */
+@media(max-width:425px){
+    #footer-img {
+        background-image: url("../img/footer_mobil.png"); 
+      min-height: 362px;  
+      /* background-attachment: fixed; */
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: cover
+    }
+    h5.redes-sociais {
+        font-size: 12px;
+    }
+    .icons {
+        width: 15px;
+        height: 15px;
+    }
+
+    strong.title-page.text-white.h2.fw-bold {
+        font-size: 22px;
+    }
+
+    .d-flex {
+        display: flex!important;
+        justify-content: space-between;
+    }
+
+    a.text-white.text-decoration-none {
+        font-size: 12px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+    p {
+        font-size: 10px;
+    }
+}
