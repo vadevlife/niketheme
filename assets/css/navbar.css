@@ -1,0 +1,14 @@
+nav.navbar,nav.navbar .container {
+    padding: 0;
+}
+
+@media (max-width:560px){
+    nav.navbar {
+        background-color: white !important;
+    }  
+    .icones {
+        background: black;
+        width: 50%;
+        padding: 0 10px;
+    }
+}

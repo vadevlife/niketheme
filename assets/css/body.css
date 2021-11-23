@@ -1,0 +1,25 @@
+hr:not([size]) {
+    height: 1px;
+    width: 350px;
+}
+hr.line{
+    background-color: black !important;
+    opacity: 100%;
+}
+
+hr.line-white{
+    background-color: white !important;
+    opacity: 100%;
+}
+
+
+.container {
+    overflow: hidden;
+}
+
+.swiper-pagination {
+    position: sticky !important;
+}
+
+
+
