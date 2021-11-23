@@ -1,8 +1,18 @@
 .parallax { 
-  background-image: url("../img/banner_desktop.png"); 
-  min-height: 600px;  
+  background-image: url("../img/banner_desktop2.png"); 
+  min-height: 625px;  
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}.parallax .text-content {
+  position: absolute;
+  bottom: 16rem;
+
+}
+@media (min-width:560px) {
+  .parallax .text-content {
+    left: 8rem;
+    max-width: 60%;
+  }
 }

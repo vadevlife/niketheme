@@ -3,7 +3,7 @@ footer {
 }
 #footer-img {
     background-image: url("../img/footer-img.png"); 
-  min-height: 400px;  
+  min-height: 420px;  
   /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
@@ -52,6 +52,17 @@ a.text-white.text-decoration-none {
     font-size: 14px;
 }
 
+.pagament img {
+    max-width: 100px;
+}
+
+a.text-muted.text-decoration-none {
+    font-size: 12px;
+}
+hr.text-muted {
+    width: auto;
+}
+
 /* Media query - mobil */
 @media(max-width:425px){
     #footer-img {
@@ -89,4 +100,8 @@ a.text-white.text-decoration-none {
     p {
         font-size: 10px;
     }
+}
+
+@media(max-whidth:768px){
+
 }
