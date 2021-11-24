@@ -4,6 +4,12 @@ footer {
 footer li {
     list-style: none !important;
 }
+/* footer .social h6 {
+    text-align: center !important;
+} */
+footer h6 {
+    text-align: center;
+}
 
 #footer-img {
     background-image: url("../img/footer-img.png"); 
@@ -106,7 +112,7 @@ hr.text-muted {
     }
 }
 
-@media(min-width:768px){
+@media(min-width:578px){
     footer h6 {
         
         text-align: left !important;
