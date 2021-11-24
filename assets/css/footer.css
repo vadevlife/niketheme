@@ -1,6 +1,10 @@
 footer {
     background-color: black !important;
 }
+footer li {
+    list-style: none !important;
+}
+
 #footer-img {
     background-image: url("../img/footer-img.png"); 
   min-height: 420px;  
@@ -102,6 +106,9 @@ hr.text-muted {
     }
 }
 
-@media(max-whidth:768px){
-
+@media(min-width:768px){
+    footer h6 {
+        
+        text-align: left !important;
+    }
 }
