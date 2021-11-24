@@ -11,6 +11,7 @@
       <link rel="stylesheet" href="assets/css/bootstrap.css">
       <link rel="stylesheet" href="assets/css/app.css"> 
       <link rel="stylesheet" href="assets/css/navbar.css"> 
+      <link rel="stylesheet" href="assets/css/cart.css"> 
       <link rel="stylesheet" href="assets/css/paralax.css"> 
       <link rel="stylesheet" href="assets/css/body.css"> 
       <link rel="stylesheet" href="assets/css/produts.css"> 
@@ -21,9 +22,9 @@
    </head>
    <body>
 
-      <header  >
+      <header >
          <nav class="navbar navbar-expand-md navbar-dark  bg-transparent position-absolute">
-            <div class="container">
+            <div class="container-fluid">
                <div class="d-flex justify-content-between w-100">
                   <div class="div d-flex ">
                     
@@ -64,20 +65,24 @@
                      <a href="#" class="text-white">
                         <i class="fas fa-search d-block"></i>
                      </a>
-                     <a href="#" class="text-white">
-                        <i class="fas fa-shopping-cart"></i>
-
-                     </a>
+                   
                      <a href="#" class="text-white">
                         <i class="far fa-user"></i>
                      </a>
-                  
-                     <span class="badge bg-danger rounded-pill">1</span>
+                     <a onclick="cart()" class="text-white pointer">
+                        <i class="fas fa-shopping-cart"></i> 
+                     </a>
+                     <span onclick="cart()" class="badge bg-danger rounded-pill">1</span>
                   </div>
                </div>
             </div>
          </nav>
       </header>
+
+      <div id="cart" class="cart"> 
+         <i id="close" onclick="cart()" view="true" class="fas fa-shopping-cart"></i> 
+
+      </div>
 
       <main >
         <div class="parallax" > 
@@ -89,7 +94,8 @@
            </div>
            
         </div>
-                    
+
+         <section class="mt-5 mb-5">   
          <div class="container marketing"  >
 
             <div class="container pt-5 pb-5">
@@ -427,6 +433,7 @@
               
             </div>
          </div>
+         </section> 
 
          <!-- PROMOCIONAL -->
          
@@ -907,7 +914,7 @@
 
          <div id="footer-img">
 
-           <div class="container pt-5 pb-5">
+           <div class="container">
 
             <div class="row align-items-center pt-5">
 
@@ -939,9 +946,9 @@
          <!-- <hr class="text-muted"> -->
          <div class="container pt-2">
 
-            <div class="row pt-4 pb-4">
+            <div class="row">
 
-               <div class="col-xs-12 col-md-2 col-lg-2">
+               <div class="col-lg-2">
                   <div class="text-center">
                      <h6 id="redes-sociais" class="fw-bolder text-white text-uppercase pb-2">Redes Sociais</h6>
                   </div>
@@ -956,7 +963,7 @@
 
                </div>
 
-               <div class="col-xs-12 col-md-2 col-lg-2 text-center">
+               <div class=" col-sm-4 col-lg-2 ">
 
                   <div class="olfati">
                      <h6 class=" fw-bolder text-white text-uppercase ">Lançamento</h6>
@@ -971,7 +978,7 @@
 
                </div>
 
-               <div class="col-xs-12 col-md-2 col-lg-2 text-center">
+               <div class=" col-sm-4 col-lg-2 ">
 
                   <div class="atendimento">
 
@@ -987,7 +994,7 @@
 
                </div>
 
-               <div class="col-xs-12 col-md-2 col-lg-2 text-center">
+               <div class=" col-sm-4 col-lg-2 ">
 
                   <div class="loja">
 
@@ -1007,7 +1014,7 @@
                      </ul> 
                   </div>
                </div>
-               <div class="col-xs-12 col-md-2 col-lg-2 text-center">
+               <div class=" col-sm-4 col-lg-2 mt-sm-3  ">
                   <div class="loja">
                      <h6 class=" fw-bolder text-white text-uppercase">Sobre</h6>
                
@@ -1026,7 +1033,7 @@
 
                </div>
 
-               <div class="col-xs-12 col-md-2 col-lg-2 text-center">
+               <div class=" col-sm-4 col-lg-2 mt-sm-3 ">
 
                   <div class="pagament">
 
@@ -1071,6 +1078,7 @@
        </footer>
 
       <script src="assets/js/bootstrap.js"></script>
+      <script src="assets/js/app.js"></script> 
       <script src="assets/js/all.js"></script> 
       <script src="assets/js/swiper-bundle.js"></script>  
     <script>
@@ -1135,6 +1143,15 @@
       });
     </script>
 
+<script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+
+<script
+  src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+  crossorigin></script>
+
+<script
+  src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+  crossorigin></script>
                
    </body>
 </html>
