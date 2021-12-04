@@ -1,12 +1,24 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
- 
+ *{
+     transition:.3s;
+ }
 
 body{
     font-family: 'Kumbh Sans', sans-serif !important;
     min-width: 376px;
     transition: 1s !important;
 }
+
+
+
+@media (max-width:1600px) {
+   
+}
+.container,.container-fluid {
+    overflow: hidden;
+    min-width: 90% !important;
+}  
 
 .second-danger-color{
     background-color: #B91132;
@@ -16,7 +28,9 @@ body{
 .breadcrunb {
     font-size: 11px;
 }
-
+.planos strong {
+    color:white !important;
+}  
 @media(max-width:545px){
     .breadcrumb {
        
@@ -292,7 +306,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     height: 34px;
     align-items: center;
     font-weight: bold !important;
-    padding-top: 7px;
+    padding: 7px;
+    max-width: 100%;
     white-space: nowrap;
 }
 .assinantes .btn svg {

@@ -1,18 +1,25 @@
 .parallax { 
-  background-image: url("../img/banner_desktop3.png"); 
+  background-image: url("../img/max.png"); 
   min-height: 625px;  
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}.parallax .text-content {
+}
+.parallax .text-content {
   position: absolute;
-  bottom: 2rem;
+  bottom: 30%;
 
 }
-@media (min-width:560px) {
+ 
+@media(min-width:560px) {
+  .parallax { 
+    background-image: url("../img/banner_desktop3.png");  
+  }
   .parallax .text-content {
     left: 8rem;
     max-width: 60%;
   }
+
+
 }

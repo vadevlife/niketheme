@@ -1,9 +1,40 @@
+.your-cart{
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+}
+
 .cart{
     position: absolute;
-    width: 80%;
+    width: 500px;
     height: 100%;
     z-index: 9999;
     background: white;
-    right: 0;
-    display: none;
-}
+    right:-100%;
+    padding: 20px;
+    max-width: 100%;
+    /* display: none; */
+    }
+
+    
+    .toogle-cart {
+        right: 0;
+    }
+    .qtd input {
+        width: 45px;
+        border-radius: 110px;
+        display: flex;
+        border: 1px solid #eee;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+
+    }
+
+    @media (max-width:500px){
+        .cart {
+            max-width: 	300px;
+        }
+    }

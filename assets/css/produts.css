@@ -1,3 +1,25 @@
 .products{
     overflow: hidden;
+    position: relative;
+}
+
+.img-prod {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+    margin: 11px auto;
+}
+h5.card-title  {
+    height: 49px;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+@media(max-width:768px){
+    .img-prod {
+        height: 90px;   
+    }
 }
