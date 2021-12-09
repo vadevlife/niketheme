@@ -1,0 +1,46 @@
+.busca-box{
+    
+    width: 480px;
+    display: flex;
+    justify-content: flex-end;
+}
+.busca {
+    position: absolute;
+    width: 0px;
+    background: transparent;
+    top: -13px;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    display: block;
+    right: 70px;
+    width: 0;
+    transition: .2s;
+
+}
+.busca form {
+    display: flex;
+    justify-content: space-evenly;
+ 
+    background: transparent;
+}
+.busca form input {
+    background-color: transparent;
+    transition: 0s !important;
+
+}
+.busca form button {
+    position: absolute;
+    display: none;
+}
+
+.busca.toogle {
+    display: block;
+    width: 480px;
+    transition: .2s;
+
+}
+.busca.toogle form input{
+    background-color: white !important;
+    transition: 0s !important;
+}

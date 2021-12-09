@@ -13,11 +13,13 @@
    <link rel="stylesheet" href="assets/css/app.css">
    <link rel="stylesheet" href="assets/css/navbar.css">
    <link rel="stylesheet" href="assets/css/cart.css">
+   <link rel="stylesheet" href="assets/css/busca.css">
    <link rel="stylesheet" href="assets/css/paralax.css">
    <link rel="stylesheet" href="assets/css/body.css">
    <link rel="stylesheet" href="assets/css/produts.css">
    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
    <link rel="stylesheet" href="assets/css/footer.css">
+   <link rel="stylesheet" href="assets/css/carrinho.css">
 
    <!-- <link rel="stylesheet" href="assets/fonts/RobotoCondensed-Regular.ttf"> -->
 
@@ -69,30 +71,41 @@
                   </div>
                </div>
                <div class="icones text-white d-flex justify-content-around align-items-center">
-                  <a href="#" class="text-white">
-                     <i class="fas fa-search d-block"></i>
-                  </a>
+                  <div class="busca-box position-relative">
+                     <a href="#" onclick="busca()" class="text-white">
+                        <i class="fas fa-search d-block"></i>
+                     </a>
+                   <!-- BUSCA -->
+                  <div id="busca" class="busca" >
+                     <form action="">
+                        <input  class="form-control rounded-pill border-0"  type="text" placeholder="Busque aqui seu produto">
+                        <button class="bg-transparent border-0"> <i class="fas fa-search text-white"></i></button>
+                     </form>
+                  </div>
+                  </div>
+               
 
-                  <a href="#" class="text-white">
+                  <a href="login.html" class="text-white">
                      <i class="far fa-user"></i>
                   </a>
                   <a onclick="cart()" class="text-white pointer">
                      <i class="fas fa-shopping-cart"></i>
                   </a>
-                  <span onclick="cart()" class="badge bg-danger rounded-pill">1</span>
+                  <span onclick="cart()" class="badge m-bg-danger rounded-pill">1</span>
                </div>
             </div>
          </div>
       </nav>
    </header>
 
+  
    <!-- CARRINHO -->
    <div class="your-cart">
       <div id="cart" class="cart">
-         <i id="close" onclick="cart()" view="true" class="fas fa-shopping-cart"></i>
+         <i id="close" onclick="cart()" view="true" class="far fa-times-circle"></i>
             <div class="text-center">
                <h6 class="display-6 text-center text-uppercase h6">Meu Carrinho</h6>
-               <span class="badge bg-danger rounded-pill w-25 mt-md-3"> </span>
+               <span class="badge m-bg-danger rounded-pill w-25 mt-md-3"> </span>
             </div>
             <div class="container">
                
@@ -104,7 +117,7 @@
                <div class="row">
                   <div class="col-3">
                      <div class="cart-img-prod">
-                        <img src="assets/img/lupin.png" width="150" alt="" class="img-fluid">
+                        <img src="assets/img/nike.png" width="150" alt="" class="img-fluid">
                      </div>
                   </div> 
                   <div class="col-4">
@@ -137,9 +150,9 @@
 
    <main>
       <div class="parallax">
-         <div class="text-content">
+         <div class="text-content" hidden>
             <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-white">
-               <span class="badge bg-danger rounded-pill w-25"> </span>
+               <span class="badge m-bg-danger rounded-pill w-25"> </span>
                <h1 class="display-5">PARA QUEM PENSA GRANDE</h1>
                <p class="lead mt-4">Quickly build an effective pricing table for your <strong>potential customers
                   </strong> with this Bootstrap example. It’s built with default Bootstrap components and utilities with
@@ -195,16 +208,18 @@
             <div class="container pt-2 pb-4">
                <div class="row aling-items-center">
                   <div class="col-md-5">
-                     <span class="badge bg-danger rounded-pill w-25 mt-md-4"> </span>
+                     <span class="badge m-bg-danger rounded-pill w-25 mt-md-4"> </span>
                      <h2 class="display-5  text-uppercase">Running Shoe Sneakers Skate</h2>
                      <p class="text-muted lead mt-4">Lorem Ipsum is simply dummy text of
                         the printing and typesetting industry.
                         Lorem Ipsum has been the industry's
                         standard dummy text ever since the 1500s.
                      </p>
-                     <button type="button" class="btn btn-danger mt-4 ">
-                        <i class="fas fa-shopping-cart"></i> Conheça Produtos
-                     </button> 
+                     <div  id="sucess" class="mt-5">
+                        <a class="w-50 btn btn-lg btn-danger rounded-pill mt4" href="javascript:void(0)" onclick="formVal()" type="">
+                          Conheça Produtos
+                        </a>
+                      </div> 
                   </div>
                   <div class="col-md-6 offset-1">
                      <img src="assets/img/produtos/black_running shoe_Sneakers_Skate_Nike_Adidas.png" class="img-fluid text-center d-block m-auto mt-4 " alt="">
@@ -216,8 +231,8 @@
             <div class="products mt-sm-4">
               
                <div class="row justify-content-center">
-                  <div class="col-lg-3 text-center">~
-                     <span class="badge bg-danger rounded-pill w-25 mt-md-3"> </span>
+                  <div class="col-lg-3 text-center">
+                     <span class="badge m-bg-danger rounded-pill w-25 mt-md-3"> </span>
 
                      <h2 class="display-6 text-center text-uppercase">Destaques</h2>
                   </div>
@@ -479,21 +494,23 @@
              
             </div>
             <div class="col-md-6 offset-md-1 mt-5">
-               <span class="badge bg-danger rounded-pill w-25 mt-md-5"> </span>
+               <span class="badge m-bg-danger rounded-pill w-25 mt-md-5"> </span>
                <h2 class="display-5  text-uppercase">Nike Vapor Waffle Sacai Oyal</h2>
                <p class="text-muted lead mt-4">Lorem Ipsum is simply dummy text of
                   the printing and typesetting industry.
                   Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s.
                </p>
-               <button type="button" class="btn btn-danger mt-4 ">
-                  <i class="fas fa-shopping-cart"></i> Conheça Produtos
-               </button> 
+               <div  id="sucess" class="mt-5">
+                  <a class="w-50 btn btn-lg btn-danger rounded-pill mt4" href="javascript:void(0)" onclick="formVal()" type="">
+                    Conheça Produtos
+                  </a>
+                </div> 
             </div>
          </div>
       </div>
       
-      <div class="bg-danger">
+      <div class="m-bg-danger">
          <div class="assinantes pt-5 pb-5">
             <div class="container pb-5">
 
@@ -655,7 +672,7 @@
 
             <div class="row justify-content-center mt-5">
                <div class="col-lg-4 text-center">
-                  <span class="badge bg-danger rounded-pill w-25 mt-md-3"> </span>
+                  <span class="badge m-bg-danger rounded-pill w-25 mt-md-3"> </span>
 
                   <h2 class="display-6 text-center text-uppercase">Promoções</h2>
                </div>
@@ -929,9 +946,12 @@
                         Cadastre-se e seja um dos primeiros a saber de todas as <br>
                         novidades e ofertas.
                      </p>
-
-                     <button class="btn btn light text-white">Assinar Agora</button>
-
+                     <div  id="sucess" class="mt-5">
+                        <a class="w-25 btn btn-lg light text-white rounded-pill mt-4" href="cadastro.html" onclick="formVal()" type="">
+                          Assine Agora
+                        </a>
+                      </div>
+                    
                </div>
 
               
@@ -1045,6 +1065,7 @@
    <script src="assets/js/all.js"></script>
    <script src="assets/js/swiper-bundle.js"></script>
    <script src="assets/js/cart.js"></script>
+   <script src="assets/js/search.js"></script>
 
    <script>
       var swiper = new Swiper(".mySwiper", {
@@ -1139,6 +1160,9 @@
          },
 
       });
+
+
+
    </script>
 
    

@@ -1,17 +1,24 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
- *{
-     transition:.3s;
- }
+  
 
 body{
-    font-family: 'Kumbh Sans', sans-serif !important;
+    font-family: 'Roboto Condensed', sans-serif !important;
     min-width: 376px;
     transition: 1s !important;
 }
 
-
-
+.btn-danger,.btn-danger:hover {
+    color: #fff;
+    background-color: #f91e22!important;
+    border-color: #f91e22 !important;
+}
+.m-bg-danger {
+    background-color: #f91e22 !important;
+}
+.assinantes .card {
+    background-color: #ed0e12 !important;
+}
 @media (max-width:1600px) {
    
 }
@@ -21,7 +28,7 @@ body{
 }  
 
 .second-danger-color{
-    background-color: #B91132;
+    background-color:#e5191d;
 }
 
 /* BREADCROUNB */
@@ -96,7 +103,7 @@ nav.navbar.navbar-expand-md.navbar-dark.bg-transparent.position-absolute{
     width: 100%;
 }
 nav.navbar a.nav-link {
-    font-size: 11px;
+    font-size: 14px;
     margin: 0 10px;
     padding: 15px 10px !important;
 }

@@ -1,0 +1,13 @@
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #d50f36 !important;
+    border-color: #717e88;
+}
+.btn {
+    border-radius: 50rem!important;
+    border-color: white !important;
+    padding-left: 10px !important;
+    padding-top: 6px !important;
+    padding-right: 10px !important;
+    padding-bottom: 6px !important;
+}

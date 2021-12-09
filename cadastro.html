@@ -1,0 +1,523 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Nike The Luxe</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="assets/css/busca.css">
+    <link rel="stylesheet" href="assets/css/paralax.css">
+    <link rel="stylesheet" href="assets/css/body.css">
+    <link rel="stylesheet" href="assets/css/produts.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/carrinho.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+
+
+ 
+    <!-- <link rel="stylesheet" href="assets/fonts/RobotoCondensed-Regular.ttf"> -->
+ 
+ 
+ </head>
+  
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+         <div class="container-fluid">
+            <div class="d-flex justify-content-between w-100">
+               <div class="div d-flex ">
+
+                  <a class="navbar-brand" href="#">
+                     <img class="d-sm-none" src="assets/img/logo.png" width="87" alt="">
+                     <img class="d-none d-sm-block" src="assets/img/logo-white.png" width="87" alt="">
+                  </a>
+                  <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                     aria-label="Toggle navigation">
+                     <i class="h4 fas fa-bars text-body pt-2"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                     <ul class="navbar-nav me-auto mb-2 mb-md-0 position-absolute p-4 p-sm-2">
+                        <li class="nav-item  text-uppercase">
+                           <a class="nav-link active" aria-current="page" href="#">Clube de Assinaturas</a>
+                        </li>
+                        <li class="nav-item  text-uppercase dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              Produtos
+                           </a>
+                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item text-white" href="categorias.html">Linha Home</a></li>
+                              <li><a class="dropdown-item text-white" href="categorias.html">Linha Business</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav-item  text-uppercase">
+                           <a class="nav-link" aria-current="page" href="#">Equipamentos</a>
+                        </li>
+                        <li class="nav-item  text-uppercase">
+                           <a class="nav-link  " aria-current="page" href="#">kits</a>
+                        </li>
+                        <li class="nav-item  text-uppercase d-block d-sm-none d-lg-block">
+                           <a class="nav-link  " aria-current="page" href="#">Promoções</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="icones text-white d-flex justify-content-around align-items-center">
+                  <div class="busca-box position-relative">
+                     <a href="#" onclick="busca()" class="text-white">
+                        <i class="fas fa-search d-block"></i>
+                     </a>
+                                    <!-- BUSCA -->
+                  <div id="busca" class="busca" >
+                     <form action="">
+                        <input  class="form-control rounded-pill border-0"  type="text" placeholder="Busque aqui seu produto">
+                        <button class="bg-transparent border-0"> <i class="fas fa-search text-white"></i></button>
+                     </form>
+                  </div>
+                  </div>
+               
+
+                  <a href="login.html" class="text-white">
+                     <i class="far fa-user"></i>
+                  </a>
+                  <a onclick="cart()" class="text-white pointer">
+                     <i class="fas fa-shopping-cart"></i>
+                  </a>
+                  <span onclick="cart()" class="badge m-bg-danger rounded-pill">1</span>
+               </div>
+            </div>
+         </div>
+      </nav>
+   </header>
+  
+   <!-- CARRINHO -->
+    <div class="your-cart" hidden>
+      <div id="cart" class="cart">
+         <i id="close" onclick="cart()" view="true" class="far fa-times-circle"></i>
+            <div class="text-center">
+               <h6 class="display-6 text-center text-uppercase h6">Meu Carrinho</h6>
+               <span class="badge m-bg-danger rounded-pill w-25 mt-md-3"> </span>
+            </div>
+            <div class="container">
+               
+
+            <div class="row">
+
+               
+               <form action="" class="mt-5">
+               <div class="row">
+                  <div class="col-3">
+                     <div class="cart-img-prod">
+                        <img src="assets/img/nike.png" width="150" alt="" class="img-fluid">
+                     </div>
+                  </div> 
+                  <div class="col-4">
+
+                     <div class="qtd d-flex">
+                        <button class="btn btn-secondary">+</button>
+                        <input value="1" type="number">
+                        <button class="btn btn-secondary">-</button>
+                     </div>
+                  
+                  </div>
+                  <div class="col-4">
+                  <div class="name h5 m-0 pt-2">
+                     Nike Air Max
+                  </div>
+                  <div class="price m-0"> 
+                        <span class="d-block">De R$ 200,00</span>
+                        <span class="d-block">por 190,00</span>
+                  </div>
+                  </div>
+                  
+               </div>
+               </form>
+            </div>
+            
+         </div>
+         </div>
+    </div>
+   
+
+   <div class="container pt-5 pb-5">
+    <div class="row align-items-center">
+      <div class="col pt-3 pb-5">
+       <main>
+         <form id="login" class="mt-2">
+           <!-- <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+           <span class="badge m-bg-danger rounded-pill w-25 mt-md-4"> </span>
+           <h1 class="display-5  text-uppercasey">CADASTRE-SE</br> E SEJA BEM VINDO!</h1>
+           <p  class="h6 mb-3 text-muted">Cadastre-se com sua conta :</p>
+           <div class="conta-g-f pb-5">
+             <div class="mt-4 justfy-content-center"> 
+               <i class="fab fa-facebook text-primary" style="font-size: 29px;"></i>
+               <i class="fab fa-google-plus text-danger ml-1" style="font-size: 29px;"></i>
+             </div>
+             <!-- <img src="assets/img/login_icons_fg.png" alt="" srcset=""> -->
+           </div>
+
+         <div  id="sucess"></div>
+         
+         <a class="w-50 btn btn-lg btn-danger rounded-pill" href="login.html" onclick="formVal()" type="">
+           Login
+         </a>
+        
+         
+         </form>
+        </main>
+      </div>
+      <div class="col pt-3 pb-5">
+ 
+        <main>
+          <div class="col">
+            <div class="bd-example">
+
+              <nav>
+                <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="false">Informaçõens Pessoais</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="true">Detalhes de Contato</button>
+                  <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Finalizar Cadastro</button>
+                </div>
+              </nav>
+
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <form id="info-cadastro" class="mt-4 pt-4">
+
+                  <h1 class="h3 mb-3 fw-normal text-uppercase"> Informações de Cadastro </h1>
+                  <div class="mt-2 d-flex align-items-center justify-content-between">
+                    <label for="inputName" class="">
+                      Nome:  
+                  </label>
+
+                  <input type="text" class="form-control rounded-pill mt-4 mb-4" id="primeiroNome" placeholder="Digite seu nome..." value="" required="">
+                  <!-- <input type="text" id="inputName" class="form-control" placeholder="Digite seu nome..." required="" autofocus="" onkeypress=" "> -->
+                  
+                  </div>
+    
+                  <div class="mt-2 d-flex align-items-center justify-content-between">
+                    <label for="inputTwoName" class="">
+                      Sobrenome:  
+                  </label>
+                  
+                  <input type="text" id="sobrenome" class="form-control rounded-pill mt-4 mb-4" placeholder="Digite seu sobrenome..." required="" autofocus="" onkeypress=" ">
+                  
+                  </div>
+                  <div class="mt-2 d-flex align-items-center justify-content-between">
+                    <label for="inputCep">
+                      CPF:
+                    </label>
+                    <input value="00000000000" type="text" class="form-control rounded-pill mt-4 mb-4" id="cpf" placeholder="00000-000" required="">
+                  
+                  </div>
+                 
+                 
+    
+                <div  id="sucess" class="mt-5">
+                  <a class="w-50 btn btn-lg btn-danger rounded-pill mt4" href="javascript:void(0)" onclick="formVal()" type="">
+                    Continuar
+                  </a>
+                </div>
+                </form>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <form id="detalhes-contato" class="mt-4 pt-4">
+                    <h1 class="h3 mb-3 fw-normal text-uppercase"> Detalhes de Contato</h1>
+                    <div class="mt-2 d-flex align-items-center justify-content-between">
+                      <label for="inputEmail" class="">
+                        E-mail:  
+                      </label>
+                      
+                      <input type="email" id="inputEmail" class="form-control rounded-pill mt-4 mb-4" placeholder="Digite seu email..." required="" autofocus="" onkeypress=" ">
+                      
+                    </div>
+                  
+                  <div class="mt-2 d-flex align-items-center justify-content-between">
+                    <label for="inputPassword" class="">  
+                          Senha:
+                    </label>
+      
+                    <input type="password" id="inputPassword" class="form-control rounded-pill mt-4 mb-4" placeholder="Digite sua senha..." required="">
+                  </div>
+                    
+                    <div class="mt-2 d-flex align-items-center justify-content-between">
+                      <label for="phone">
+                        Celular:
+                      </label>
+                      <input value="+11" class="form-control rounded-pill mt-4 mb-4" type="tel" id="phone" placeholder="9 9999-9999" name="phone" >
+                                
+                    </div>
+                    <div class="mt-2 d-flex align-items-center justify-content-between">
+                        <label for="cep">CEP</label>
+                        <input value="11680-000" type="text" class="form-control rounded-pill mt-4 mb-4" id="cep" placeholder="" required="">
+                        <div class="invalid-feedback">
+                          É obrigatório inserir um CEP.
+                        </div>
+                    </div>
+                    <div class="mt-2 d-flex align-items-center justify-content-between">
+                      <label for="pais">País</label>
+                      <select class="custom-select d-block w-100 rounded-pill mt-4 mb-4" id="pais" required="">
+                        <option value="">Escolha...</option>
+                        <option selected="">Brasil</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Por favor, escolha um país válido.
+                      </div>
+                    </div>
+                    <div class="mt-2 d-flex align-items-center justify-content-between">
+                      <label for="estado">Estado</label>
+                      <select class="custom-select d-block w-100 rounded-pill mt-4 mb-4" id="estado" required="">
+                        <option value="">Escolha...</option>
+                        <option selected="">Acre</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Por favor, insira um estado válido.
+                      </div>
+                    </div>
+                    <div  id="sucess" class="mt-5">
+                      <a class="w-50 btn btn-lg btn-danger rounded-pill mt4" href="javascript:void(0)" onclick="formVal()" type="">
+                        Continuar
+                      </a>
+                    </div>
+                  </form>
+                 </div>
+                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  <form id="Finalizar-cadastro" class="mt-4 pt-4">
+                    <h1 class="h3 mb-3 fw-normal text-uppercase">Finalizar Cadastro</h1>
+          
+                    <div class="mt-2 d-flex align-items-center justify-content-between">
+                      <label for="phone">
+                        Celular:
+                      </label>
+                      <input value="+11" class="form-control rounded-pill mt-4 mb-4" type="tel" id="phone" placeholder="9 9999-9999" name="phone" >
+                                
+                    </div>
+          
+                    <div class="mt-2 d-flex align-items-center justify-content-between">
+                      <label for="inputTwoName" class="">
+                        Sobrenome:  
+                     </label>
+                     
+                     <input type="text" id="inputtwoName" class="form-control rounded-pill mt-4 mb-4" placeholder="Digite seu sobrenome..." required="" autofocus="" onkeypress=" ">
+                     
+                    </div>
+          
+                     <div class="mt-2 d-flex align-items-center justify-content-between">
+                       <label for="inputEmail" class="">
+                         E-mail:  
+                      </label>
+                      
+                      <input type="email" id="inputEmail" class="form-control rounded-pill mt-4 mb-4" placeholder="Digite seu email..." required="" autofocus="" onkeypress=" ">
+                      
+                     </div>
+                   
+                   <div class="mt-2 d-flex align-items-center justify-content-between">
+                     <label for="inputPassword" class="">  
+                           Senha:
+                     </label>
+          
+                     <input type="password" id="inputPassword" class="form-control rounded-pill mt-4 mb-4" placeholder="Digite sua senha..." required="">
+                   </div>
+                     
+                   <div class="checkbox mt-3 d-flex justify-content-between">
+                     <label>
+                     <input type="checkbox" type="check-box" value="remember-me">
+                     Premitir lembrar Senha.
+                     </label>
+          
+                     <label>
+                       <input type="checkbox" type="check-box" value="remember-me">
+                      Aceitar <strong>Termos</strong> de <strong> Privacidade.</strong>
+                     </label>
+                   </div>
+          
+                   <div  id="sucess" class="mt-5">
+                     <a class="w-50 btn btn-lg btn-danger rounded-pill mt4" href="javascript:void(0)" onclick="formVal()" type="">
+                       Continuar
+                     </a>
+                   </div>
+                   </form>
+                </div>
+                </div>
+                
+              </div>
+              </div>
+          </div>
+        
+        </main>
+      </div>
+    </div>
+  </div>
+
+    <div class="container" hidden>
+
+      <form id="register" action="needs-validation">
+
+          <div class="row">
+            
+            <!-- Primeira_Coluna(Informaçõens de cadastro) -->
+            <div class="col-md-6 ">
+              
+
+
+                <div class="form-row">
+                 
+                  <div class="col-md-6 mb-3">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input value="Segundo Nome Usuário"type="text" class="form-control" id="sobrenome" placeholder="Sobrenome" value="" required="">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <!-- cógigo postal -->
+                  <div class="col-md-6 mb-3">
+                    <label for="phone">Código Postal:</label>
+                    <input value="+55" class="form-control" type="tel" id="phone" placeholder="+55" name="phone" >
+                    <!-- <input value="+55" class="form-control" type="tel" id="phone" placeholder="+55" name="phone" > -->
+                  </div>
+                  <!-- DDD -->
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <label for="phone">DDD</label>
+                        <input value="+11" class="form-control" type="tel" id="phone" placeholder="99" name="phone" >
+                      </div>
+                      <div class="col-md-9 mb-3">
+                        <label for="phone">Telefone/Celular:</label>
+                        <input value="+11" class="form-control" type="tel" id="phone" placeholder="9 9999-9999" name="phone" >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- localização -->
+                <div class="form-row">
+                  <div class="col-md-5 mb-3">
+                    <label for="pais">País</label>
+                    <select class="custom-select d-block w-100" id="pais" required="">
+                      <option value="">Escolha...</option>
+                      <option selected>Brasil</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Por favor, escolha um país válido.
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="estado">Estado</label>
+                    <select class="custom-select d-block w-100" id="estado" required="">
+                      <option value="">Escolha...</option>
+                      <option selected>Acre</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Por favor, insira um estado válido.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="cep">CEP</label>
+                    <input value="1168000" type="text" class="form-control" id="cep" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      É obrigatório inserir um CEP.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CPF -->
+                <div class="form-row">
+                  <div class="col-md-12">
+                    <label for="cep">CPF</label>
+                    <input value="00000000000" type="text" class="form-control" id="cep" placeholder="999.999.999-99" required="">
+                  </div>
+                </div>
+
+            </div>
+
+            <!-- Segunda_coluna (destalhes de contato) -->
+            <div class="col-md-5 offset-md-1"> 
+              <h1 class="h3 mb-3 fw-normal text-primary"> Detalhes de Contato </h1>
+
+              <div class="form-row">
+                <label for="exampleInputEmail1">Email</label>
+                <input value="teste@portal.com" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Digite seu Email:">
+               </div>
+
+              <div class="form-row">
+                <label for="exampleInputPassword1">Sua senha</label>
+                <input value="123456789" type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha">
+              </div>
+              
+              <div class="form-row">
+                <div class="col-md-12">
+                <label for="exampleFormControlTextarea1">Informações Adicionais</label>
+                <textarea value="teste@portal.com" class="form-control" id="exampleFormControlTextarea1" placeholder="Digite suas Informaçõens Adicionais:" rows="3"></textarea>
+                </div>
+              </div> 
+                
+              <div class="form-row">
+              <div class="col-md-12">
+              <input type="checkbox" class="form-check-input" checkd id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Eu aceito termos e condições deste Site.</label>
+              </div>
+              </div> 
+
+              <div class="form-row">
+                <a href="javascript:void(0);" type="submit" role="alert-success" class="btn btn-primary" onclick="formVal()">Enviar cadastro</a>
+              </div>
+
+            </div> 
+
+          </div> 
+          <div  id="sucess"></div>
+
+      </form>
+ 
+
+     
+
+      <!-- <p class="mt-5 mb-3 text-muted text-center"> © Diretos reservados 2021 </p> -->
+    </div>
+  </body>
+
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- <script src="assets/js/app.js"></script> -->
+  <script src="assets/js/all.js"></script>
+  <script src="assets/js/swiper-bundle.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/search.js"></script>
+  
+  <script> 
+
+    window.addEventListener("load", function(event) {
+      console.log("Todos os recursos terminaram o carregamento!");  
+      
+    });
+
+    function formVal() {
+      var form = document.getElementById("register") 
+      
+      var aval=[];      
+      var suces = document.getElementById("sucess")  
+      var element = "";
+      for (var index = 0; index < form.length; index++) {
+        const element  = form[index].value+"<br>" ;   
+        aval.push(element)   
+       
+       console.log(element)
+        document.getElementById("sucess").innerHTML = aval;
+      }
+      
+      
+    }  
+  </script>
+  
+</html>

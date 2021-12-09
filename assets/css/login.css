@@ -1,0 +1,11 @@
+img {
+    width: 80px;
+    height: auto;
+}
+
+input#inputPassword {
+    width: 529px;
+}
+input#inputEmail {
+    width: 529px;
+}
