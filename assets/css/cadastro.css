@@ -7,6 +7,12 @@ input#inputtwoName{
 input#cpf{
     width: 529px;
 }
+input#primeiroNome{
+    width: 529px;
+}
+input#sobrenome{
+    width: 485px;
+}
 input#phone{
     width: 522px;
 }
@@ -37,4 +43,10 @@ button#nav-profile-tab {
 }
 button#nav-contact-tab{
     color: #71757d;
+}
+
+ul.dropdown-menu.show {
+    background: rgb(0 0 0 / 25%);
+    border: 0;
+    padding: 20px 5px;
 }

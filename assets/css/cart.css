@@ -33,7 +33,7 @@
 
     }
 
-    @media (max-width:500px){
+    @media (min-width:500px){
         .cart {
             max-width: 	300px;
         }
